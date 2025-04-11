@@ -4,17 +4,107 @@
 }
 
 :root {
+    font-size: 16px;
     font-family: inherit;
     box-sizing: border-box;
 }
 
 body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #f6f6f6;
+    background-color: #f5f0f0;
 }
+
+main {
+    flex:auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginMsg {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    height: 30%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.loginMsg h1{
+    padding-left: 2rem;
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    justify-self: center;
+}
+
+.mainForm {
+    background-color: #ffffff;
+    border-radius: 0.2rem;
+    display: flex;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    height: 45%;
+    width: 100%;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0px 0px 8px 7px rgb(230, 230, 230);
+    
+}
+
+fieldset {
+    max-height: 100%;
+    width: 60%;
+    justify-content: flex-end;
+    border-style: none;
+    position: relative;
+    display: flex;
+    margin-left: 1em;
+    padding: 1em;
+    flex-direction: column;
+}
+
+legend {
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.5rem;
+    top: 10%;
+    font-family: Helvetica, sans-serif;
+}
+
+/** To do tomorrow label + fields + surrounding bits**/
+
+label {
+    line-break: auto;
+}
+.fields {
+    width: 100%;
+}
+
+.formOptions {
+    border: 2px solid blue;
+    flex: auto;
+}
+button {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    justify-self: center;
+    align-self: flex-start;
+}
+
 
 .img-sidebanner {
     align-self: flex-start;
@@ -22,20 +112,19 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    width: 500px;
+    width: 35vw; /* Takes up its fixed point of the page */
     height: 100%;
     justify-content: center;
+    z-index: 1;
 }
 
 .img-sidebanner-logobanner  {
     display: flex;
     position: absolute;
-    padding: 10px;
-    margin: 0;
     top: 130px;
-    width: 96%;
+    width: 100%;
     left: 0;
-    height: 8rem;
+    height: 10rem;
     background-color: rgba(19, 18, 18, 0.55);
     justify-content: center;
     align-items: center;
@@ -43,14 +132,15 @@ body {
 
 .img-sidebanner-logobanner img{
     height: 8rem;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
 }
 .img-sidebanner-logobanner h1 {
     font-family: "Norse";
     color: white;
-    font-size: 6em;
-
+    font-size:6em;
+    max-width: 100%;
 }
 
 #side-bg {
@@ -61,7 +151,7 @@ body {
 figcaption {
     position: absolute;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 0.9rem;
     font-size: 1em;
     align-self: end;
 }
