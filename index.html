@@ -3,9 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Odin Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello</h1>
+    <figure class="img-sidebanner">
+      <img id="side-bg" src="halie-west-25xggax4bSA-unsplash.jpg" alt="Wet leaves in a forest">
+      <div class="img-sidebanner-logobanner">
+       <img src="odin-lined.png" alt="ODIN Logo">
+       <h1 id="odinlogo-word">ODIN</h1>
+      </div>
+      <figcaption class="img-sidebanner-caption">Photo by <span class="underline">Haile West</span> on <span class="underline">Unsplash</span></figcaption>  
+    </figure>
+    <main class="main-body">
+      <form>
+        <section>
+            <fieldset>
+            <legend id="form-head">Let's do this!</legend>
+            <div class="fields">
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname">
+            </div>
+            <div class="fields">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname">
+            </div>
+            <div class="fields">
+              <label for="e-mail">Email</label>
+              <input type="email" name="e-mail" id="e-mail">
+            </div>
+            <div class="fields">
+              <label for="phone">Phone Number</label>
+              <input type="number" name="phone" id="phone">
+            </div>
+            <div class="fields">
+              <label for="pword">Password</label>
+              <input type="password" name="pword" id="pword">
+            </div>
+            <div class="fields">
+              <label for="pword-confirm">Confirm Password</label>
+              <input type="password" name="pword-confirm" id="pword-confirm">
+            </div>
+            <button type="submit" id="createAccBtn">Create Account</button>
+          </fieldset>
+        </section>
+      </form>
+      <p>Already have an account? <span class="loginLink">Log in</span></p>
+    </main>
 </body>
 </html>
+

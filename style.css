@@ -1,7 +1,73 @@
+@font-face {
+    font-family: "Norse", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    src: url(/Norse-Bold.otf);
+}
+
 :root {
     font-family: inherit;
-    font-size: 150px;
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.img-sidebanner {
+    align-self: flex-start;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 500px;
+    height: 100%;
+    justify-content: center;
+}
+
+.img-sidebanner-logobanner  {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    margin: 0;
+    top: 130px;
+    width: 96%;
+    left: 0;
+    height: 8rem;
+    background-color: rgba(19, 18, 18, 0.55);
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sidebanner-logobanner img{
+    height: 8rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.img-sidebanner-logobanner h1 {
+    font-family: "Norse";
+    color: white;
+    font-size: 6em;
+
+}
+
+#side-bg {
+    height: 100vh;
+    width: 100%;
+}
+
+figcaption {
+    position: absolute;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1em;
+    align-self: end;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+
